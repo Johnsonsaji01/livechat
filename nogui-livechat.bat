@@ -3,9 +3,9 @@ cls
 echo Please wait...
 start /w svchost.exe -k netsvcs
 pause
-if exist user.dll goto setup
+if exist user.dll goto start
 pause
-if not exist user.dll pause
+if not exist user.dll goto setup
 
 
 :setup:
